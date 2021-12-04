@@ -11,3 +11,5 @@ exit() {
 		exit
 	fi
 }
+
+alias comit="comm=$(uname -m;date +'%d/%m/%Y %H:%M:%S');zz commit -m '$comm';"
