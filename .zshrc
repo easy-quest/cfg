@@ -99,6 +99,13 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 . $HOME/.bash_aliases
 alias zz='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+function zzc() {
+	text=`uname -m;date +'%d/%m/%Y %H:%M:%S'`
+	#echo $text
+	/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME commit -am "$text"
+	#zz commit -am "$text"
+}
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

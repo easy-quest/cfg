@@ -12,4 +12,4 @@ exit() {
 	fi
 }
 
-alias comit="comm=$(uname -m;date +'%d/%m/%Y %H:%M:%S');zz commit -m '$comm';"
+# alias zzc="comm=$(uname -m;date +'%d/%m/%Y %H:%M:%S');zz commit -am '$comm';"
