@@ -102,7 +102,8 @@ alias zz='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 function zzc() {
 	text=`uname -m;date +'%d/%m/%Y %H:%M:%S'`
 	#echo $text
-	/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME commit -am "$text" && /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME push
+	/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME commit -am "$text"
+	/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME push
 
 	#zz commit -am "$text"
 }
