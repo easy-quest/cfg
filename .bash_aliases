@@ -113,3 +113,12 @@ xpyc=`python -c "import os, sys; f = open(os.devnull, 'w'); sys.stderr = f; modu
 alias pi='pip install -U'
 alias rm='rm -Rf $argv'
 alias md='mkdir -p $argv'
+
+
+## Полезные alias
+# Заменить ls на exa
+alias ls='exa --color=always --group-directories-first --icons'     # предпочтительный список
+alias la='exa -a --color=always --group-directories-first --icons'  # все файлы и каталоги
+alias ll='exa -l --color=always --group-directories-first --icons'  # длинный формат
+alias lt='exa -aT --color=always --group-directories-first --icons' # древовидный список
+alias l.="exa -a | egrep '^\.'"                                     # точечные файлы
